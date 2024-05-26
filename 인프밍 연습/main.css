@@ -1,0 +1,59 @@
+.main{text-align: center;}
+div.main2{display: inline-block;}
+.h1{text-shadow: 2px 2px 2px gray;}
+li{
+    display: inline-block;
+    background-color: aquamarine;
+    padding: 5px 1px 5px 1px;
+    color: black;
+    width: 100px;
+    height: 30px;
+    list-style-type: none;
+}
+#a:hover{
+    background-color: red;
+}
+#b:hover{background-color: orange;}
+#c:hover{background-color: yellow;}
+
+a.login{
+    text-decoration: none;
+    color: purple;}
+#d:hover{background-color: yellowgreen;}
+
+iframe{
+    width:1000px;
+    height: 1000px;
+}
+
+
+
+body.body2{text-align: center;}
+h3{padding-top: 20px;}
+.pmain{
+    text-align: justify;
+    margin: 0px 50px 10px;
+    padding:30px 130px 0px;
+}
+.ham{
+    display: inline;
+}
+.ham:hover{
+    width: 250px;
+    height: 250px;
+}
+
+.body3{text-align: center;}
+.div3{display: inline-block;}
+table{
+    border: 2px solid gray;
+}
+table{border-collapse: collapse;}
+
+input{box-shadow: 3px 3px 3px gray inset;}
+.idid, .pwpw{background-color: white;}
+.idid:hover{background-color: blue;}
+.idid:focus{background-color: brown;}
+.pwpw:hover{background-color: blue;}
+.pwpw:focus{background-color: brown;}
+.submit >*{margin-right: 5%; margin-bottom: 3%; float: right;}
