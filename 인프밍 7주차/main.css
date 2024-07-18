@@ -1,0 +1,112 @@
+
+.main {text-align: center;}
+.main div {display: inline-block;}
+
+.main h1 {
+    color: red;
+    text-shadow: 10px 0px 5px black;
+}
+.main ul li{
+    width: 70px;
+    padding: 20px;
+    display: inline-block;
+    background-color: aqua;
+}
+.main a{
+    text-decoration: none;
+    color: black;
+ }
+/*무조건 ul li a여야하는가?*/
+.loginn:hover {
+    background-color:yellowgreen;
+    color: green;
+}
+.a:hover {
+    background-color:red;
+    color: pink;
+}
+.a:active{
+    background-color: peru;
+}
+/*클래스에서는 앞에 뭘 쓰지 말기*/
+.b:hover {
+    background-color:blue;
+    color: skyblue;
+}
+.b:active{
+    background-color: skyblue;
+}
+.c:hover {
+    background-color: orange;
+    color: wheat;
+}
+.c:active {
+    background-color: plum;
+
+}
+.d:hover {
+    background-color:yellow;
+    color: green;
+}
+.d:active{
+    background-color: purple;
+}
+
+.main iframe{
+    width: 750px;
+    height: 500px;
+}
+
+
+
+
+.content{
+    text-align: center;
+}
+.content div{display: inline-block;}
+
+.content table{
+    border-collapse: collapse;
+    margin: auto;
+}
+.content td{
+    border: 1px solid palevioletred;
+}
+.content th{
+    border: 1px solid palevioletred;
+}
+.content p {
+    margin: 50px;
+    padding: 30px;
+}
+.hehe:hover{
+    background-color: skyblue;
+}
+.content img{
+    width: 50px;
+    height: 50px;
+}
+.content img:hover{
+    width: 100px;
+    height: 100px;
+}
+
+
+
+.login {text-align: center; background-color: pink;}
+.login div {display: inline-block;}
+.login table{ 
+
+    border-collapse: collapse;
+    padding: 20px;
+}
+.login input:hover{
+    background-color: skyblue;
+}
+.login input{
+    box-shadow: inset 2px 1px 2px black;
+    background-color: white;
+}
+input:focus{
+    background-color: brown;
+}

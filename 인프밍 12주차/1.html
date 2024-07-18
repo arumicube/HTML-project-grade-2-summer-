@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>팜하니 좋아</title>
+        
+        <script>
+            let count =0;
+            function DarkMode(_name){
+                var domLists = document.getElementsByTagName(_name);
+                if(count%2==0)
+                {                       
+                    for(i=0;i<domLists.length;i++){
+                        domLists[i].style.color="white";
+                        domLists[i].style.backgroundColor = "black";
+                    }
+                    count =1;
+                }
+                else{
+                    
+                   
+                    for(i=0;i<domLists.length;i++){
+                        domLists[i].style.color = "black";
+                        domLists[i].style.backgroundColor = "white";
+                    }
+                    count =0;
+                }
+            }
+
+            function AddSong(parentId){
+                let parent = document.getElementById(parentId);
+
+        let songDiv = document.createElement("div");    
+        songDiv.classList.add("song-entry");
+
+        let titleDiv = document.createElement("div");
+        let nameDiv = document.createElement("div");
+        let imageDiv = document.createElement("div");
+        let imgElement = document.createElement("img");
+
+            
+            nameDiv.innerHTML = document.getElementById("title").value+" - <strong>" + document.getElementById("name").value+"</strong>";
+            imgElement.src = document.getElementById("image").value;
+            imgElement.alt = "Song Image";
+            imageDiv.appendChild(imgElement);
+
+            songDiv.appendChild(titleDiv);
+            songDiv.appendChild(nameDiv);
+            songDiv.appendChild(imageDiv);
+
+        parent.appendChild(songDiv);    
+            }
+        </script>
+    </head>
+    <body>
+
+        <h3><strong>팜하니 와다다 가사</strong></h3>
+        <button onclick="DarkMode('body')">다크모드로 보기</button>
+        <hr>
+        <br>
+        
+        <h2>~WADADA~</h2>
+        <span>Hey!<br>
+            It's you, and I<br>
+            Let's start<br>
+            N-N-Now 도착한 이 place, watch my step<br>
+            나의 신호를 따라, five, four, three, two, one (uh-huh)<br>
+            꿈꿔온 모험 가까이 있어 (있어)<br>
+            Take off with me, with me, let's go (muah)<br>
+            한 발, 한 발 내디뎌 갈수록, 내 마음은 떨려 (like it)<br>
+            선명해진 dream, 느껴지는 걸, eh-oh-eh-oh<br>
+            Heads up, 꿈을 향해 달려, 달려<br>
+            Stand up, 너와 내 꿈, higher, higher<br>
+            누구보다 빨리 달려갈 거야<br>
+            네가 있는 곳으로 (와다다다)<br>
+            Running vroom, vroom, vroom, like a supersonic (let's go)<br>
+            와다다, 와다다, 달려 (right now)<br>
+            맘이 쿵쿵쿵 뛰어 미친 듯이<br>
+            와다다, 와다다, Kep1 going, 와다다다<br>
+            Oh-oh, oh-oh, oh-oh, oh-oh-oh-oh (hey)<br>
+            Oh-oh, oh-oh, oh-oh-oh, 너에게로, 와다다다<br>
+            Oh-oh, oh-oh, oh-oh, oh-oh-oh-oh (yeah, yeah)<br>
+            Oh-oh, oh-oh, oh-oh-oh, Kep1 going, 와다다다<br>
+            One, check it, two, 신중히<br>
+            좀 더 바짝 세워, radar, radar<br>
+            눈치챌 거야 지금 이 떨림, I'm gonna be brave, yeah (like it)<br>
+            ...이하생략</span>
+
+
+        <h2>위 직캠과 잘어울리는 노래 조합 추천</h2>
+        <div id="song">
+            
+        <span>title: <input id="title" type="text" placeholder="노래 제목 입력"></span><br>
+        <span>musician: <input id = "name" type ="text" placeholder="가수명"> </span> <br>
+        <span>img src: <input id = "image" type ="text" placeholder="이미지 파일"> </span> <br>
+        <span id="span1"><button onclick="AddSong('song')">추가하기</button></span>
+            
+        </div>
+    </body>
+</html>

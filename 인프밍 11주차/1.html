@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>안아름</title>
+        <script>
+
+        </script>
+    </head>
+    <body>
+        <script>
+            alert("로또 당첨을 노려보세요!");
+            num=prompt("공백으로 구분된 여섯 개의 숫자를 입력하시오.\n #단, 순서도 주의하시오.#");
+            let userArray=num.split(" ");
+
+
+            let lottoArray=new Array();
+            for(j=0;j<6;j++){
+                let a=Math.random()*50;//0-49.9999
+                num2=Math.floor(a) + 1; //1-50 
+                while(lottoArray.includes(num2))
+                {
+                    let b=Math.random()*50;//0-49.9999
+                    num2=Math.floor(b) + 1; //1-50 
+                }
+                lottoArray[j]=num2;
+        }
+        let count = 0;
+        for(p=0;p<6;p++){
+            if(userArray[p]==lottoArray[p]){
+                count++;
+            }
+        }
+        alert("금주의 로또번호: "+lottoArray);
+        alert(count + "개 맞추셨습니다!");
+
+            let now =new Date();
+            document.write("현재 시간: "+now.toUTCString()+" +0900 "+"("+"한국 표준시"+")");
+            document.write("<br><hr>");
+            document.write("로또 마감일: ");
+            
+            let next=new Date(now);
+            next.setDate(now.getDate()+3); //몰라서 30분 헤멤 주의!!! 꼭 복습하기
+            let next2=next.toUTCString();
+            document.write(next2+" +0900 "+"("+"한국 표준시"+")"+" <br><hr>");
+
+
+            document.write("금주의 로또번호: ");
+            document.write(lottoArray);
+        </script>
+    </body>
+</html>
